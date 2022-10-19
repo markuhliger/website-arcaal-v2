@@ -1,0 +1,215 @@
+/*CSS PARA BUSCADOR DEL CATÁLOGO DE LAS PÁGINAS CATÁLOGO, BOMBAS, EQUIPOS Y PANELES*/
+
+*{
+color: #000;
+}
+
+#input-search {
+	width: 85%;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    color: #0a5c88;
+    border-radius: 50px;
+    background-color: #aaa7a7;
+}
+
+.section-search {
+    background-color: black;
+	color: #0a5c88;
+}
+
+.content-search {
+	width: 100%;
+	margin: auto;
+	background: rgb(161, 199, 236);
+	padding:0 10px;
+	padding-bottom: 5px;
+	max-height: 85%;
+	overflow-x: hidden;
+	display: none;
+	z-index: 5;
+	border-radius: 40px;
+	font-family: 'Josefin Sans';
+}
+
+.content-search table {
+    width: 100%;
+    font-size: 20px;
+}
+
+tbody tr td {
+    width: 100%;
+}
+
+tbody tr td a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #737373;
+	display: block;
+	width: 967px;
+	height: 100%;
+	padding: 20px 0;
+	padding-left: 20px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+}
+
+tbody tr td a:hover {
+    background: rgba(0,0,0,0.3);
+    border: 2px solid #378FD9;
+	border-radius: 50px;
+    color: #0a5c88;
+    
+}
+
+#table_length, #table_filter, #table_info, #table_paginate {
+    display: none;
+}
+
+.header-top {
+	width: 1000PX;
+	background: #0a5c88;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+	border: 2px solid #737373;
+	border-radius: 70px;
+	font-family: 'Josefin Sans';
+	font-size: 10px;
+}
+
+.navegacion {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	padding:12px 0;
+	font-family: 'Josefin Sans';
+}
+
+.navegacion img {
+	width: 40px;
+}
+
+::placeholder {
+	color: rgb(4, 58, 146);
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+	.section-search {
+	  width: 100%;
+	}
+	.header-top {
+		width: 130%;
+		margin-left: -100px;
+	}
+	.navegacion {
+		width: 100%;
+	}
+	#input-search {
+		width: 90%;
+	}
+	.content-search {
+		width: 130%;
+		font-size: 18px;
+		margin-left: -100px;
+	}
+	tbody tr td a{
+		width: 100%;
+		font-size: 18px;
+	}
+  }
+
+/*VENTANA MAYOR A 900*/
+@media screen and (min-width: 900px) {
+	.section-search {
+	  width: 100%;
+	}
+	.header-top {
+		width: 100%;
+	}
+	.navegacion {
+		width: 100%;
+	}
+	#input-search {
+		width: 90%;
+	}
+	.content-search {
+		width: 100%;
+		font-size: 18px;
+	}
+	tbody tr td a{
+		width: 100%;
+		font-size: 18px;
+	}
+  }
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.section-search {
+		width: 100%;
+	  }
+	  .header-top {
+		  width: 180%;
+		  /*margin-left: -35%;*/
+		  margin-left: -100px;
+	  }
+	  .navegacion {
+		  width: 100%;
+	  }
+	  #input-search {
+		  width: 90%;
+	  }
+	  .content-search {
+		  width: 180%;
+		  /*margin-left: -100px;*/
+		  font-size: 18px;
+		  margin-left: -100px;
+	  }
+	  tbody tr td a{
+		  width: 100%;
+		  font-size: 18px;
+	  }
+  }
+
+/*iPhone's*/
+@media screen and (max-width: 400px) {
+	.section-search {
+	  width: 100%;
+	}
+	.header-top {
+		width: 115%;
+		margin-left: -100px;
+		/*margin-left: -90px;
+		/*margin-left: -35%;*/
+	}
+	.navegacion {
+		width: 100%;
+	}
+	#input-search {
+		width: 90%;
+		font-size: 12px;
+	}
+	.content-search {
+		width: 115%;
+		/*margin-left: -100px;*/
+		font-size: 12px;
+		height: 50%;
+		margin-left: -100px;
+	}
+	tbody tr td a{
+		width: 100%;
+		font-size: 12px;
+	}
+  }
+
+
+  
+
+  

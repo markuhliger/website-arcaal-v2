@@ -1,0 +1,306 @@
+/*CSS PARA DAR FORMATO AL FOOTER*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background:  #54a2fa;;
+  z-index: 0;
+}
+
+.main-content{
+  display: flex;
+}
+
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #1846df;
+  top: -10px;
+}
+
+.left .content p{
+  text-align: justify;
+  color: #fff;
+}
+
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+  padding: 0 2px;
+}
+
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.left .content .social a span:hover{
+  background: #1846df;
+  transform: translateY(-10px);
+}
+
+.right .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.right .content .fab{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.right .content .fas:hover{
+  background: #1846df;
+  transform: translateY(-10px);
+}
+
+.right .content .fab:hover{
+  background: #1846df;
+  transform: translateY(-10px);
+}
+
+.right .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.right .content .phone{
+  margin: 15px 0;
+}
+
+.center form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+
+.center form .msg{
+  margin-top: 10px;
+}
+
+.center form input, .center form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.center form input:focus,
+.center form textarea:focus{
+  outline-color: #3498db;
+}
+
+.center form input{
+  height: 35px;
+}
+
+.center form .btn{
+  margin-top: 10px;
+}
+
+.center form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #1846df;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.center form .btn button:hover{
+  background: #000;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #1846df;
+  
+}
+
+.bottom center span{
+  color: #000;
+}
+
+.bottom center a{
+  color: #1846df;
+  text-decoration: none;
+}
+
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+.center .content .menu-inf {
+  list-style: none;
+}
+
+.center .content .menu-inf a{
+  opacity: 0.7;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 20px;
+  color: #fff;
+  
+}
+
+.center .content .menu-inf a:hover{
+  transform: translateY(-10px);
+  color: #101374;
+  opacity: 1;
+}
+
+footer .website-logo{
+  margin-bottom: 1.2rem;
+  font-size: calc(1vw +20px);
+  color: #2a2a2a;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box{
+    margin: 5px 0;
+  }
+  
+}
+
+/*CREAR EFECTO DE MOVIMIENTO DE OLA*/
+footer .wave {
+  z-index: 0;
+  position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(mywave.png);
+    background-size: 1000px 100px;
+    
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+

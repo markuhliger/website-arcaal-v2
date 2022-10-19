@@ -1,0 +1,23 @@
+/*CSS PARA BARRA DE NAVEGACIÓN VERTICAL Y HORIZONTAL*/
+
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to right, rgb(5, 5, 5) 0%, rgba(36, 36, 37, 0.96) 74%);
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgb(1, 15, 59) 0%, rgba(63, 114, 208, 0.96) 74%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0px 0px 3px 2px rgb(4, 4, 4) inset;
+}
+
+::-webkit-scrollbar-thumb:active {
+    box-shadow: 0px 0px 3px 2px rgb(4, 4, 4) inset;
+}

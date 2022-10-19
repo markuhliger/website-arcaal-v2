@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9JB597ZNE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D9JB597ZNE');
+  </script>
+
+  <title>SISTEMAS DE BOMBEO ARCAAL</title>
+
+  <meta charset="UTF-8"/> <!--PARA ESPECIFICAR EL TIPO DE JUEGOS DE CARACTERES QUE PUEDE MANEJAR LA PÁGINA, charset ES UN ATRIBUTO Y EL VALOR UTF-8 PERMITE ACENTOS CORRECTAMENTE-->
+  <meta http-equiv="X-UA-Compatible" content="IE-edge"/> <!--COMPATIBLE CON INTERNET EXPLORER-->
+  <meta name="viewport" content="width=device-width, initial-scale=1,0" /> <!--NECESARIA PARA ACOMODAR DE MANERA RESPONSIVA A LOS ELEMENTOS HTML, DEPENDIENDO DEL TAMAÑO DEL DISPOSITIVO QUE SE ESTÁ UTILIZANDO, LOS ELEMENTOS HTML SE PUEDEN ACOMODAR AUTOMÁTICAMENTE-->
+
+  <!--ICONO DE LOGO-->
+  <link rel="icon" href="logo03.png">
+
+  <!--HOJAS DE ESTILO Y LIGA JQUERY PARA EL MENÚ AJUSTABLE A LA VENTANA-->
+  <link rel="stylesheet" href="style-menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    
+  <!--HOJA DE ESTILO PARA SCROLL HORIZONTAL SUPERIOR AZUL-->  
+  <link rel="stylesheet" href="css/style-scroll-indicator.css">
+
+  <!--HOJA DE ESTILO PARA BOTÓN QUE SUBE-->
+  <link rel="stylesheet" href="css/style-button-backtotop.css">
+
+  <!--HOJA DE ESTILO PARA FOOTER-->
+  <link rel="stylesheet" href="style-footer.css">
+
+  <!--HOJA DE ESTILO PARA EL CONTENIDO DE LA PÁG CATÁLOGO-->
+  <link rel="stylesheet" href="style-body-web.css">
+
+  <!--HOJA DE ESTILO PARA PERSONALIZAR LA BARRA DE NAVEGACIÓN-->
+  <link rel="stylesheet" href="css/style-scroll-nav.css">
+
+  <!--HOJA DE ESTILO PARA BUSCADOR DEL CATÁLOGO-->
+  <link rel="stylesheet" href="css/style-search.css">
+    
+  <!--EXTRAER CÓDIGO JS PARA BUSCADOR DEL CATÁLOGO-->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+
+  <!--HOJA DE ESTILO PARA PERSONALIZAR BOTONES-->
+  <link rel="stylesheet" href="css/style-buttons.css">
+
+</head>
+<body>
+
+  <!--ENCABEZADO-->
+  <header>
+    <!--MENÚ-->
+    <div class="heade"> 
+      <a href="index.html" class="logo">
+        <img src="img-logo/logo_ajustado.png">
+      </a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="index.html"><i class="fas fa-home"></i> INICIO</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#"><i class="fas fa-users"></i> NOSOTROS <i class="fas fa-chevron-circle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="mision.html"><i class="fas fa-mountain"></i> MISIÓN</a></li>
+              <li class="sub-item"><a href="vision.html"><i class="fas fa-eye"></i> VISIÓN</a></li>
+              <li class="sub-item"><a href="valores.html"><i class="fas fa-hands-helping"></i> VALORES</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="servicios.html"><i class="fas fa-hand-holding"></i> SERVICIOS</a></li>
+          <li class="menu-item active">
+            <a class="sub-btn" href="#"><i class="fas fa-box-open"></i> PRODUCTOS <i class="fas fa-chevron-circle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="marcas.html"><i class="fas fa-tags"></i> MARCAS</a></li>
+              <li class="sub-item"><a href="catalogo.html"><i class="fas fa-newspaper"></i> CATÁLOGO</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="contacto.html"><i class="fas fa-id-card"></i> CONTACTO</a></li>
+        </ul>
+      </div>
+
+      <!--BOTÓN DE MENÚ DESPLEGABLE-->
+      <div class="menu-btn"></div>
+    
+    </div>
+    
+    <!--SCROLL INDICATOR BAR-->
+    <div class="scroll-cont">
+      <div class="scroll-line"></div>
+    </div>
+
+  </header>
+
+  <!--IMÁGEN PRINCIPAL DE LA PÁG CATÁLOGO-->
+  <section class="section-home-cat">
+  </section>
+
+  <!--BUSCADOR DEL CATÁLOGO-->
+  <section class="section-search">
+    <div class="header-top">
+			<div class="navegacion">
+        <input type="text" id="input-search" placeholder="Buscar aquí...">
+      </div>
+    </div>
+    <div class="content-search">
+      <table id="table">
+        <thead>
+          <tr>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="bombas_contra_incendio.html">Bombas Contra Incendio</a></td>
+          </tr>
+          <tr>
+            <td><a href="bombas_para_agua.html">Bombas Para Agua Helada y Agua Caliente</a></td>
+          </tr>
+          <tr>
+            <td><a href="bombas_para_agua_residual.html">Bombas Para Agua Residual y Aguas Negras</a></td>
+          </tr>
+          <tr>
+            <td><a href="equipos_hidroneumaticos.html">Equipos Hidroneumáticos</a></td>
+          </tr>
+          <tr>
+            <td><a href="bombas_industriales.html">Bombas Industriales</a></td>
+          </tr>
+          <tr>
+            <td><a href="bombas_de_procesos.html">Bombas de Procesos</a></td>
+          </tr>
+          <tr>
+            <td><a href="bombas_para_mineria.html">Bombas Para Minería</a></td>
+          </tr>
+          <tr>
+            <td><a href="equipos_para_tratamiento.html">Equipos Para Tratamiento de Agua</a></td>
+          </tr>
+          <tr>
+            <td><a href="paneles_de_control.html">Paneles de Control</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!--DESCRIPCIÓN DE EQUIPOS PARA TRATAMIENTO DE AGUAS-->  
+  <section class="section-two">
+    <div class="cont-bombas">
+      <p><b>EQUIPOS PARA TRATAMIENTO DE AGUAS</b></p>
+      <br/>
+      <br/>
+      <ul class="checklist-bombas">
+        <li>Bombas Sumergibles de Agua Residual</li> 
+        <br/>
+        <li>Bombas de Cavidad Progresiva</li> 
+        <br/>
+        <li>Mezcladores Sumergibles</li>
+        <br/>
+        <li>Aireadores Mecánicos</li> 
+        <br/>
+        <li>Aceleradores de Corriente</li>
+        <br/>
+        <li>Sopladores</li>
+        <br/>
+        <img src="img-bombas/edta.png">
+        <br/>
+        <li>Puertas Deslizantes</li>
+        <br/>
+        <li>Rejillas de Desvaste</li>
+        <br/>
+        <li>Filtros y Medios Filtrantes</li>
+        <br/>
+        <li>Hidrotamiz</li>
+        <br/>
+        <li>Sistemas de Rastra y Tornamesa</li>
+        <br/>
+        <li>Canaletas y Vertederos</li>
+        <br/>
+        <img src="img-bombas/edta02.png">
+      </ul>
+      <p>*Para más información pongase <a href="contacto.html">en contacto con nosotros.</a></p> 
+      <br/> 
+    </div>
+  </section>
+
+  <!--DESCARGAR CATÁLOGO-->
+  <section class="section-download">
+    <p>También se puede visualizar y descargar nuestro catálogo actualizado en un archivo PDF (.pdf).</p>
+    <div class="espacio-tres"></div>
+    <div class="botones">
+      <a href="catalogo-pdf/CATALOGO AZUL - 09-2022.pdf" class="btn btn-primary" target="_blank"><i class="	far fa-eye"></i>Catálogo</a>
+      <br/><br/>
+      <a href="catalogo-pdf/CATALOGO AZUL - 09-2022.pdf" class="btn btn-success" download="catalogo_arcaal_09-2022.pdf"><i class="fas fa-download"></i>Catálogo</a>
+    </div>
+    <div class="espacio"></div>
+  </section>
+   
+  <!--EXTRAER CÓDIJO JS PARA BUSCADOR DEL CATÁLOGO-->
+  <script src="js/search.js"></script>
+
+  <!--TOP BUTTON-->
+  <a id="backtotop"><i class="fas fa-chevron-up"></i></a>
+  <script type="text/javascript" src="js/script-button-backtotop.js"></script>
+
+  <!--PIE DE PÁGINA-->
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="main-content">
+      <div class="left box">
+        <h2>COMPAÑÍA</h2>
+        <div class="content">
+          <center>
+            <img src="img-logo/logo_corto.png" width="70px">
+            <h3 class="website-logo">ARCAAL</h3>
+          </center>
+          <p>Contamos con más de 20 años de experiencia en equipos de bombeo.</p>
+          <div class="social">
+            <a href="https://www.facebook.com/people/Bombas-y-Sistemas-de-Bombeo-Arcaal/100069236835284/" target="_blank"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/arcaalbombas" target="_blank"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.linkedin.com/mwlite/company/sistemas-de-bombeo-arcaal" target="_blank"><span class="fab fa-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center box">
+        <h2>OFRECEMOS</h2>
+        <div class="content">
+          <ul class="menu-inf">
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="marcas.html">MARCAS</a></li>
+            <li><a href="catalogo.html">PRODUCTOS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right box">
+        <h2>CONTACTO</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">CDMX, Puebla</span>
+          </div>
+          <div class="phone">
+            <span class="fab fa-whatsapp"></span>
+            <span class="text">55 7870 0945</span>
+          </div>
+          <div class="phone">
+            <span class="fab fa-whatsapp"></span>
+            <span class="text">55 3079 8847</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">ventas@arcaalmx.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit"><h3><b>&copy;2022, Sistemas de Bombeo ARCAAL S.A de C.V. Todos los derechos reservados.</h3></b></span>
+      </center>
+    </div>
+  </footer>
+
+  <!--CÓDIGO JS PARA MENU RESPONSIVE-->
+  <script type="text/javascript">
+  
+    //CÓDIGO PARA DESPLEGAR MENÚ Y SUBMENÚ
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+  </script>
+
+  <!--EXTRAER CÓDIGO JS PARA SCROLL INDICATOR BAR-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/script-scroll-indicator.js"></script>
+
+  <!--EXTRAER CÓDIGO JS PARA TOP BUTTON-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,1569 @@
+/*CSS PARA DAR FORMATO AL CUERPO DE LA PÁGINA WEB (A TODOS LOS ARCHIVOS HTML)*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans:200,300,400,500,600,700,800,900&display=swap');
+
+/*-----------CSS PÁGINA INICIO-----------*/
+.cont-inicio {
+  background: #8BC0F9;
+  font-family: 'Josefin Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:0px 0px 0px 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+.cont-inicio p{
+  text-align: center;
+}
+
+.cont-inicio:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 50%;
+  bottom: -1px;
+}
+
+.section-home-inicio{
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+  background: url(img-titulos/inicio_fondo07.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-inicio:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+}
+
+.section-home-inicio .slogan {
+  position: absolute;
+  bottom: 10%;
+}
+
+.section-home-inicio .slogan p {
+  -webkit-text-stroke: 1px rgb(3, 34, 61);
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(111, 179, 238), rgb(11, 107, 192), rgb(5, 51, 91));
+  -webkit-background-clip: text;
+  color: transparent;  
+  font-family: "Poppins", sans-serif;
+}
+
+.cont-inicio p i b{
+  color: #0F3F73;
+}
+
+.section-slider{
+  background:url(img-slider/fondo_azul11.jpeg);
+  background-size:cover;
+  background-repeat:repeat;
+  transition: 2.5s;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+  
+  .section-home-inicio {
+    width: 100%;
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+
+}
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .section-home-inicio {
+    width: 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+  .section-home-inicio {
+    width: 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+  }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+  .section-home-inicio {
+    width: 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+  }
+
+  /* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+only screen and (min-device-pixel-ratio : 1.5) {
+  .section-home-inicio {
+    width: 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+}
+
+/* iPhone XR*/
+@media (min-width: 414px) and (max-width: 896px) {
+  .section-home-inicio {
+    width: 100%;
+    background-size: 170% 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+}
+
+/* iPhone 12 Pro*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .section-home-inicio {
+    width: 100%;
+    background-size: 170% 100%;
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+}
+
+/* iPhone 12 Pro*/
+@media (min-width: 280px) and (max-width: 653px) {
+  .section-home-inicio {
+    width: 100%;
+    background-size: 170% 100%;
+    
+  }
+  .cont-inicio p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cont-inicio{
+    justify-items: center;
+    width: 100%;
+  }
+  .section-two{
+    width: 100%;
+  }
+}
+
+/*-----------CSS PÁGINA MISIÓN-----------*/
+.cont-mision {
+    background: #8BC0F9;
+    font-family: 'Josefin Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 70px;
+    box-shadow:0px 0px 0px 10px #0F3F73;
+    padding: 20px;
+    position: relative;
+    transition: 2.5s;
+  }
+  
+  .cont-mision p{
+    text-align: center;
+  }
+
+  .cont-mision:before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, #3d3f44, transparent);
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    width: 100%;
+    height: 50%;
+    bottom: -1px;
+  }
+
+  .espacio {
+    height: 100px;
+  }
+
+  .espacio-dos {
+    height: 50px;
+    background-color: #23252B;
+  }
+
+  .espacio-tres {
+    height: 50px;
+  }
+
+  .section-home-mision{
+    position: relative;
+    min-height: 60vh;
+    background: url(img-titulos/mision_fondo.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.5s;
+  }
+  
+  .section-home-mision:before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, #23252B, transparent);
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+  }
+
+/*-----------CSS PÁGINA VISIÓN-----------*/
+.cont-vision {
+  background: #8BC0F9;
+  font-family: 'Josefin Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:0px 0px 0px 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+.cont-vision p{
+  text-align: center;
+}
+
+.cont-vision:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 50%;
+  bottom: -1px;
+}
+
+.section-home-vision{
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/vision_fondo.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-vision:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+/*-----------CSS PÁGINA VALORES-----------*/
+.cont-valores{
+    background: #8BC0F9;
+    color: #333;
+    font-family: 'Josefin Sans';
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 70px;
+    box-shadow:5px 10px #0F3F73,
+                0 0 0 10px #0F3F73;
+    padding: 20px;
+    position: relative;
+    transition: 2.5s; 
+}
+
+.cont-valores p{
+  text-align: center;
+}
+
+.cont-valores p i b{
+  color: #0F3F73;
+}
+
+.enlistar-valores {
+  line-height: 1.5;
+}
+
+.checklist-valores li b u{
+  margin: 0;
+  padding: 36px 0 36px 50px;
+  list-style: none;
+  text-decoration: none;
+  background-image: url("img-iconos/icon-valores.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  color: #0F3F73;
+}
+
+.checklist-valores li{
+  text-align: center;
+  list-style: none;
+  color: #23252B;
+}
+
+.checklist-valores img {
+  width: 350px;
+  display: block;
+  margin: 0px auto;
+}
+
+.cont-valores:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 5%;
+  bottom: -1px;
+  display: flexbox;
+  left: 0px;
+}
+
+.section-home-valores{
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/valores_fondo.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-valores:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+  .cont-valores .checklist-valores img {
+    width: 180px;
+  }
+
+  .cont-valores p {
+    font-size: 20px;
+  }
+
+  .espacio-dos{
+    height: 50px;
+  }
+
+  .section-home-valores {
+    width: 100%;
+  }
+
+}
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .cont-valores .checklist-valores img {
+    width: 180px;
+  }
+
+  .cont-valores p {
+    font-size: 20px;
+  }
+
+  .espacio-dos{
+    height: 50px;
+  }
+
+  .section-home-valores {
+    width: 100%;
+  }
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+  .cont-valores .checklist-valores img {
+    width: 180px;
+  }
+
+  .cont-valores p {
+    font-size: 20px;
+  }
+
+  .espacio-dos{
+    height: 50px;
+  }
+
+  .section-home-valores {
+    width: 100%;
+  }
+}
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+only screen and (min-device-pixel-ratio : 1.5) {
+.cont-valores .checklist-valores img {
+  width: 180px;
+}
+
+.cont-valores p {
+  font-size: 20px;
+}
+
+.espacio-dos{
+  height: 50px;
+}
+
+.section-home-valores {
+  width: 100%;
+}
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 360px) {
+  .cont-valores .checklist-valores img {
+    width: 180px;
+  }
+
+  .cont-valores p {
+    font-size: 20px;
+  }
+
+  .espacio-dos{
+    height: 50px;
+  }
+
+  .section-home-valores {
+    width: 100%;
+  }
+}
+
+/*iPhone SE*/
+@media (min-width: 414px) and (max-width: 896px) {
+  .section-home-valores {
+    width: 100%;
+    background-size: 170% 100%;
+    
+  }
+}
+
+/* iPhone 12 Pro*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .section-home-valores {
+    width: 100%;
+    background-size: 170% 100%;
+  }
+}
+
+/* Galaxy Fold*/
+@media (min-width: 280px) and (max-width: 653px) {
+  .section-home-valores {
+    width: 100%;
+    background-size: 170% 100%;
+  }
+}
+
+/*-----------CSS PÁGINA SERVICIOS-----------*/
+.cont-servicios{
+  background: #8BC0F9;
+  color: #333;
+  font-family: 'Josefin Sans';
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:5px 10px #0F3F73,
+  0 0 0 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+.cont-servicios p{
+text-align: center;
+}
+
+.cont-servicios p i b{
+  color: #0F3F73;
+}
+
+.checklist-servicios {
+  list-style-image: url(img-iconos/cloud.svg);
+}
+
+.checklist-servicios li{
+  color: #23252B;
+  margin-left: 50px;
+}
+
+.checklist-servicios li b u{
+  color: #0F3F73;
+}
+
+.checklist-servicios img {
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+}
+
+.cont-servicios:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 5%;
+  bottom: -1px;
+  display: flexbox;
+  left: 0px;
+}
+
+.section-home-servicios {
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/servicios_fondo.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-servicios:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+  .cont-servicios .checklist-servicios img {
+    width: 140px;
+  }
+
+  .cont-servicios p {
+    font-size: 20px;
+  }
+
+  .section-home-servicios {
+    width: 100%;
+  }
+
+
+}
+
+/*iPhone SE*/
+@media (min-width: 414px) and (max-width: 896px) {
+  .section-home-servicios {
+    width: 100%;
+    background-size: 170% 100%;
+    
+  }
+}
+
+/*iPhone 12 Pro*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .section-home-servicios {
+    width: 100%;
+    background-size: 170% 100%;
+  }
+}
+
+/*Galaxy Fold*/
+@media (min-width: 280px) and (max-width: 653px) {
+  .section-home-servicios {
+    width: 100%;
+    background-size: 170% 100%;
+  }
+}
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .section-home-servicios {
+    width: 100%;
+  }
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+  .section-home-servicios {
+    width: 100%;
+  }
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+  .section-home-servicios {
+    width: 100%;
+  }
+}
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+only screen and (min-device-pixel-ratio : 1.5) {
+  .section-home-servicios {
+    width: 100%;
+  }
+}
+
+/*-----------CSS PÁGINA MARCAS-----------*/
+.cont-marcas {
+  background: #8BC0F9;
+  color: #333;
+  font-family: 'Josefin Sans';
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:5px 10px #0F3F73,
+              0 0 0 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+.cont-marcas p {
+  text-align: center;
+}
+
+.cont-marcas:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 5%;
+  bottom: -1px;
+  display: flexbox;
+  left: 0px;
+}
+
+.section-home-marcas {
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/marcas_fondo02.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-marcas:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+.cont-marcas p i b {
+  color: #0F3F73;
+}
+
+.checklist-marcas img {
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.checklist-marcas li {
+  color: #23252B;
+  text-align: center;
+  list-style: none;
+}
+
+.checklist-marcas li b u {
+  color: #0F3F73;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 200*/
+@media screen and (max-width: 200px) {
+.cont-marcas{
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+  .cont-marcas .checklist-marcas img {
+    width: 100%;
+  }
+  .checklist-marcas li p{
+    font-size: 18px;
+    text-align: center;
+    margin-left: -40px;
+  }
+}
+
+/*-----------CSS PÁGINA CATÁLOGO-----------*/
+.cont-cat {
+  background: #8BC0F9;
+  color: #333;
+  font-family: 'Josefin Sans';
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:5px 10px #0F3F73,
+              0 0 0 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+.cont-cat h1 {
+  text-align: center;
+  color: #23252B;
+}
+
+.cont-cat p {
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.cont-cat p a {
+  font-size: 22px;
+  color: #0F3F73;
+  text-align: center;
+}
+
+.checklist-cat li b u{
+  margin: 0;
+  padding: 36px 0 36px 35px;
+  list-style: none;
+  text-decoration: none;
+  background-image: url("img-iconos/check.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+  color: #2955b4;
+  font-size: 20px;
+}
+
+.checklist-cat li{
+  text-align: left;
+  list-style: none;
+  color: #0F3F73;
+  line-height: 50px
+}
+
+.cont-cat:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 7%;
+  bottom: -1px;
+  display: flexbox;
+  left: 0px;
+}
+
+.section-home-cat {
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/cat_fondo04.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.section-home-cat:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+.cont-cat p i b {
+  color: #0F3F73;
+  text-align: center;
+}
+
+.section-cat {
+  background: #000;
+  transition: 2.5s;
+}
+
+.section-download {
+  background: #01163e;
+  transition: 2.5s;
+}
+
+.section-download p {
+  color: #8ec4e1;
+  text-align: center;
+}
+
+.botones .far, .fas{
+  color: #fff;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+
+  .section-home-cat {
+    width: 100%;
+  }
+
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+
+  .cont-bombas .checklist-bombas img {
+    width: 105%;
+  }
+  .cont-bombas .checklist-bombas li {
+    font-size: 150%;
+  }
+  .cont-bombas h1 {
+    font-size: 1px;
+  }
+  .cont-cat li {
+    font-size: 11.3px;
+    color: #0a5c88;
+    text-align: center;
+  }
+
+  .checklist-cat li b u{
+    font-size: 11.3px;
+    color: #2955b4;
+    text-align: center;
+    background-size: 15px;
+  }
+
+  .cont-cat p {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .cont-cat p a {
+    font-size: 12px;
+    color: #0F3F73;
+    text-align: center;
+  }
+
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+  .section-home-cat {
+    width: 100%;
+  }
+  
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+  }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+  .section-home-cat {
+    width: 100%;
+  }
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+  }
+
+
+/* motog4 */
+@media only screen and (max-width : 360px) {
+  .section-home-cat {
+    width: 100%;
+  }
+  
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+  }
+
+  /* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+only screen and (min-device-pixel-ratio : 1.5) {
+  .section-home-cat {
+    width: 100%;
+  }
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+}
+
+/* iPhone XR*/
+@media (min-width: 414px) and (max-width: 896px) {
+  .section-home-cat {
+    width: 100%;
+    background-size: 170% 100%; 
+  }
+  
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+}
+
+/* iPhone 12 Pro*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .section-home-cat {
+    width: 100%;
+    background-size: 170% 100%; 
+  }
+  
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+}
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .section-home-cat {
+    width: 100%;
+    
+  }
+  .botones a{
+    color: #fff;
+    border: none;
+    margin: 0px;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    }
+
+}
+
+/* motog*/
+@media (min-width: 280px) and (max-width: 653px) {
+  .section-home-cat {
+    width: 100%;
+    background-size: 170% 100%;
+    
+  }
+
+  .botones a{
+  color: #fff;
+  border: none;
+  margin: 0px;
+  padding: 7px 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  text-decoration: none;
+  width: 100%;
+  font-size: 12px;
+  }
+
+}
+
+/*-----------CSS PÁGINA BOMBAS CONTRA INCENDIO-----------*/
+.cont-bombas{
+  background: #8BC0F9;
+  color: #333;
+  font-family: 'Josefin Sans';
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:5px 10px #0F3F73,
+  0 0 0 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+}
+
+
+.cont-bombas p {
+  text-align: center;
+}
+
+.cont-bombas p a {
+  color: #0F3F73;
+}
+
+.cont-bombas p i b{
+  color: #0F3F73;
+}
+
+.cont-bombas:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 7%;
+  bottom: 0px;
+  display: flexbox;
+  left: 0px;
+}
+
+.checklist-bombas {
+  list-style-image: url(img-iconos/droplet.svg);
+}
+
+.checklist-bombas li {
+  margin-left: 50px;
+}
+
+.checklist-bombas li {
+  font-size: 25px;
+  color: #23252B;
+}
+
+.checklist-bombas img {
+  width: 500px;
+  display: block;
+  margin: 0px auto;
+}
+
+.cont-bombas p b {
+  color: #082fa3;
+  text-align: center;
+  font-size: 36px;
+}
+
+.cont-bombas .titulo-bombas-largo p b {
+  color: #082fa3;
+  text-align: center;
+  font-size: 96%;
+  margin: auto;
+}
+
+.cont-bombas .titulo-bombas-largo b {
+  color: rgb(6, 22, 103);
+  text-align: center;
+  font-size: 25px;
+}
+
+.cont-bombas h2 {
+  color: rgb(6, 22, 103);
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+}
+
+.cont-bombas h2 i {
+  color: rgb(6, 22, 103);
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+}
+
+/*-----------CSS PÁGINA CONTACTO-----------*/
+.cont-contacto {
+  background: #8BC0F9;
+  font-family: 'Josefin Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow:0px 0px 0px 10px #0F3F73;
+  padding: 20px;
+  position: relative;
+  transition: 2.5s;
+  width: 100%;
+}
+
+
+.cont-contacto:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #3d3f44, transparent);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+  height: 20%;
+  bottom: -1px;
+  display: flexbox;
+  left: 0px;
+}
+
+.section-home-contacto{
+  position: relative;
+  min-height: 60vh;
+  background: url(img-titulos/contacto_fondo02.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans';
+  transition: 2.5s;
+}
+
+.section-home-contacto:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
+
+.info-contacto {
+  color: #000;
+  max-width: 500px;
+  line-height: 65px;
+  font-size: 18px;
+  font-family: 'Josefin Sans';
+  border-radius: 70px;
+  transition: 2.5s;
+}
+
+.info-contacto i {
+  font-size: 25px;
+  color: #000;
+}
+
+.info-contacto div {
+  transition: 0.5s;
+  color: #000;
+}
+
+.info-contacto div a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #000;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.formulario {
+  max-width: 700px;
+  text-align: center;
+  top: 10px;
+  font-family: 'Josefin Sans';
+  transition: 2.5s;
+  justify-content: center;
+  justify-items: center;
+}
+
+.info-contacto, .formulario {
+  flex: 1;
+}
+
+.formulario h2{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.formulario .form-control{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 500px;
+  height: 60px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.formulario .form-control:first-child {
+  margin-right: 15px;
+}
+
+.formulario textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+}
+
+/************------------RESPONSIVE------------************/
+
+/*VENTANA MENOR A 900*/
+@media screen and (max-width: 900px) {
+  .section-home-contacto {
+    width: 100%;
+  }
+
+  .section-two{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-contacto{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 110%;
+    /*justify-items: center;*/
+    margin: 0px auto;
+  }
+
+  .info-contacto{
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .info-contacto div{
+    font-size: 70%;
+    line-height: 45px;
+    text-align: left;
+  }
+
+  .info-contacto div a{
+    font-size: 97%;
+    line-height: 45px;
+    text-align: left;
+  }
+
+  .mb-3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mb-3 .form-control {
+    width: 100%;
+  }
+
+}
+
+  /*VENTANA MAYOR A 900*/
+  @media screen and (min-width: 900px) {
+    .section-home-contacto {
+      width: 100%;
+    }
+  
+    .section-two{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .cont-contacto{
+      flex-wrap: wrap;
+      width: 110%;
+      margin: 0px auto;
+    }
+  
+    .info-contacto{
+      justify-content: center;
+      justify-items: center;
+    }
+  
+    .info-contacto div{
+      font-size: 70%;
+      line-height: 45px;
+      text-align: left;
+    }
+  
+    .info-contacto div a{
+      font-size: 97%;
+      line-height: 45px;
+      text-align: left;
+    }
+
+    .mb-3{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .mb-3 .form-control {
+      width: 100%;
+    }
+  }
+
+  /*MOTO G4*/
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .section-home-contacto {
+      width: 100%;
+    }
+  
+    .section-two{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .cont-contacto{
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 195%;
+      /*justify-items: center;*/
+      margin: 0px auto;
+    }
+  
+    .info-contacto{
+      justify-content: center;
+      justify-items: center;
+    }
+  
+    .info-contacto div{
+      font-size: 70%;
+      line-height: 45px;
+      text-align: left;
+    }
+  
+    .info-contacto div a{
+      font-size: 97%;
+      line-height: 45px;
+      text-align: left;
+    }
+
+    .mb-3{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .mb-3 .form-control {
+      width: 100%;
+    }
+  }
